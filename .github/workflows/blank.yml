@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            cd /opt
-            echo "hello"
-            pwd
+            cd /opt/config-hub
+            make update
+            sudo make restart 
